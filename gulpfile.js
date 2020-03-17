@@ -92,10 +92,7 @@ gulp.task('watch', function() {
 
 gulp.task('deploy', function () {
 	return gulp.src("./prod/**/*")
-		.pipe(deploy({
-			remoteUrl: "https://github.com/insok/insok.github.io.git",
-			branch: "master"
-}))
+		.pipe(deploy())
 });
 
 gulp.task('default', gulp.series(['js', 'sass', 'fonts', 'browser-sync', 'watch']));
