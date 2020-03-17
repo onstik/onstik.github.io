@@ -91,7 +91,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('deploy', function () {
-	return gulp.src("./prod/**/*")
+	return gulp.src("./dist/**/*")
 		.pipe(deploy())
 });
 
