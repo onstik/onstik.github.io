@@ -1,0 +1,20 @@
+# Site settings
+title: Konstantin Benz
+description: Simple Site about me and my Projects. 
+# baseurl: "/particle" # the subpath of your site, e.g. /blog
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: Konstantin Benz
+user_description: Always interested in understanding new things and mastering them.
+user_title: Software Developer, Web Designer, information technology assisstant.
+email: Konstantin.Benz@Protonmail.com
+twitter_username: lorem_ipsum
+github_username:  insok
+gplus_username:  lorem_ipsum
+
+# Google-analytics
+google-analytics:
+  id: ""
+
+exclude: ['package.json', 'src' , 'node_modules']
