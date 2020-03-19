@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   particlesJS('particles-js', {
     "particles": {
       "number": {
-        "value": 50,
+        "value": 75,
         "density": {
           "enable": true,
           "value_area": 800
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "opacity": {
-        "value": 1,
+        "value": 0.8,
         "random": false,
         "anim": {
           "enable": false,
@@ -52,21 +52,21 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       "line_linked": {
         "enable": true,
-        "distance": 200,
+        "distance": 220,
         "color": "#ffffff",
-        "opacity": 0.4,
+        "opacity": 0.2,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 2,
+        "speed": 0.8,
         "direction": "none",
         "random": true,
         "straight": false,
         "out_mode": "out",
         "bounce": false,
         "attract": {
-          "enable": false,
+          "enable": true,
           "rotateX": 600,
           "rotateY": 1200
         }
@@ -78,11 +78,11 @@ document.addEventListener("DOMContentLoaded", function () {
       "events": {
         "onhover": {
           "enable": false,
-          "mode": "grab"
+          "mode": "bubble"
         },
         "onclick": {
           "enable": true,
-          "mode": "push"
+          "mode": "repulse"
         },
         "resize": true
       },
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "duration": 0.4
         },
         "push": {
-          "particles_nb": 4
+          "particles_nb": 1
         },
         "remove": {
           "particles_nb": 2
