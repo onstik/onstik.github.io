@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   particlesJS('particles-js', {
     "particles": {
       "number": {
-        "value": 75,
+        "value": 65,
         "density": {
           "enable": true,
           "value_area": 800
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "out_mode": "out",
         "bounce": false,
         "attract": {
-          "enable": true,
+          "enable": false,
           "rotateX": 600,
           "rotateY": 1200
         }
