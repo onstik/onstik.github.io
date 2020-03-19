@@ -43,6 +43,32 @@
       font-size: 40px;
     }
   }
+  .menubar{
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      //background-color: $main;
+      border-bottom: 2px solid $sec;
+      width: 100%;
+    }
+    li {
+      float:left;
+      width: calc(100%/2);
+      display:inline;
+    }
+    li a {
+      display: block;
+      color: white;
+      text-align: center;    
+      padding: 14px 25px;
+      text-decoration: none;
+      &:hover{
+        background-color: $maingrey;
+      } 
+    }
+  }
 }
 
 .header-links {
