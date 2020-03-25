@@ -1,0 +1,33 @@
+<div class="contact-form">
+  <h1> Contact Me</h1>
+  <p> {{site.contact_form}} </p>
+</div>
+ 
+<div class="form">
+  <form
+    action="https://formspree.io/xbjkwken"
+    method="POST">
+    <div class="label-inputmail">
+    <label>
+      <h3>E-mail:</h3>
+      <input
+        type="text" 
+        name="_replyto"
+        placeholder="example@mail.ru">
+    </label>
+    </div>
+    <div class="label-inputtext">
+    <label>
+      <h3>Message:</h3>
+      <textarea 
+        name="message"
+        rows="4"
+        cols="35"
+        placeholder="leave your message here..."
+        maxlength="800"></textarea>
+    </label>
+    </div>
+
+    <button type="submit">Send</button>
+  </form>
+</div>

@@ -1,0 +1,94 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  @media only screen and (min-width: $cut) {
+    width: 80%;
+  }
+}
+.contact-form {
+  margin: 20px auto;
+  h5 {
+    margin: 0;
+  }
+  p {
+    margin-right: 5px;
+  }
+}
+.form {
+  .label-inputmail {
+    display: inline-block;
+    vertical-align:top;
+    width: 80%;
+    input {
+      border:none;
+      border-color:transparent;
+      font-size: 1.1rem;
+      width: 80%; 
+    }
+    @media only screen and (min-width: $cut) {
+      width: 35%;
+    }
+  }
+  .label-inputtext {
+    display: inline-block;
+    width: 80%;
+    textarea {
+      resize: none;
+      width: 100%;
+      font-size: 1.1rem;
+      outline:none;
+      border: 1px solid transparent;
+      &:hover{
+        border: 1px solid $maingreyalpha;
+      }
+      &:focus{
+        border: 1px solid $maingreyalpha;
+      }
+    }
+    @media only screen and (min-width: $cut) {
+      width: 60%;
+    }
+  }
+  button {
+    display: flex;
+    @media only screen and (min-width: $cut) {
+      display: inline-block;
+    }
+    margin: 10px 0px;
+    padding: 10px;
+    color: $main;
+    background-color: transparent;
+    border: 1px solid $main;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease-out,
+                background-color 0.3s ease-out,
+                border-color 0.3s ease-out;
+    &:hover {
+      background-color: $purple;
+      border-color: $purple;
+      color: #fff;
+      transition: color 0.3s ease-in,
+                  background-color 0.3s ease-in,
+                  border-color 0.3s ease-in;
+    }
+    &:active {
+      background-color: $purple;
+      border-color: $purple;
+      color: #fff;
+      transition: color 0.3s ease-in,
+                  background-color 0.3s ease-in,
+                  border-color 0.3s ease-in;
+    }  
+  }
+}
+
+
+
