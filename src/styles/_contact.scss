@@ -27,7 +27,8 @@
       border:none;
       border-color:transparent;
       font-size: 1.1rem;
-      width: 80%; 
+      width: 80%;
+      outline:none;       
     }
     @media only screen and (min-width: $cut) {
       width: 35%;

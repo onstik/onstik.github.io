@@ -115,7 +115,7 @@
 </div>
  
 <div class="form">
-  <form
+  <form id="fsform"
     action="https://formspree.io/xbjkwken"
     method="POST">
     <div class="label-inputmail">
@@ -139,7 +139,9 @@
     </label>
     </div>
 
-    <button type="submit">Send</button>
+    <button id="fsbutton">Send</button>
+    <p id="fsstatus"></p>
+    <input type="hidden" name="_next" value="#contact"/>
   </form>
 </div>
 

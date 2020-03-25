@@ -113,6 +113,39 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     },
     "retina_detect": true
-  });
+  })
+});
+document.addEventListener("DOMContentLoaded",function() {
+  var form = document.getElementByID("fsform");
+  var button = document.getElementByID("fsbutton");
+  var status = document.getElementByID("fsstatus");
 
-}, false);
+  function success() {
+    form.reset();
+    button.style = "display: none ";
+    status.innerHTML = "Thanks!";
+  }
+  function error() {
+    status.innerHTML = "There was a problem, try again!";
+  }
+  form.addEventListener("Submit",function(ev) {
+    ev.preventDefault();
+    var data = new FormData(form);
+    ajax(form.method, form.action, data , success, error);
+  )}
+});
+
+function ajax(method, url, data, success, error) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(method, url);
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status ===200) {
+      success(xhr.response, xhr.responseType);
+    } else {
+      error(xhr.status, xhr.response, xhr.responseType);
+    }
+  };
+  xhr.send(data);
+}
