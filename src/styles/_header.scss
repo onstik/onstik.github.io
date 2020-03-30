@@ -64,8 +64,12 @@
       text-align: center;    
       padding: 14px 25px;
       text-decoration: none;
+      transition: background-color 0.2s ease-out;
       &:hover{
         background-color: $maingreyalpha;
+        transition: background-color 0.2s ease-in;
+
+        
       } 
     }
   }
