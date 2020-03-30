@@ -2,7 +2,7 @@
 title: Konstantin Benz
 description: Website about me and my Projects. 
 # baseurl: "" # the subpath of your site, e.g. /blog
-# url: "insok.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "kbenz.net" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Konstantin Benz
