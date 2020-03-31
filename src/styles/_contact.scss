@@ -43,6 +43,12 @@
       font-size: 1.1rem;
       outline:none;
       border: 1px solid transparent;
+      #style-1
+      ::webkit-scrollbar {
+        width: 6px;
+        background-color: $main;
+      }
+      
       &:hover{
         border: 1px solid transparent;
       }

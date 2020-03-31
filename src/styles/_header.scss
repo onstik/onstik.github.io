@@ -138,7 +138,10 @@
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       width: 100px;
-      height: 100px;
+      height: 25px;
+      @media only screen and (min-width:$cut) {
+        height: 100px;
+      }
       fill: #fff;
       -webkit-animation: pulse 1.3s infinite;
       animation: pulse 1.3s infinite;
