@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "acorn": "^7.1.1",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "browser-sync": "^2.26.7",
     "bubleify": "^1.2.1",
     "gulp": "^4.0.2",
